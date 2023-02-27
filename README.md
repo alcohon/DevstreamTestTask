@@ -1,1 +1,3 @@
 # DevstreamTestTask
+
+.NET 6
