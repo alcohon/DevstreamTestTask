@@ -16,7 +16,7 @@ namespace DevstreamTestTask.Design.Domain
 
         public Motorbike() : base() 
         { 
-
+            speed = DEFAULT_MIN_SPEED;
         }
 
         public Motorbike(
