@@ -12,6 +12,7 @@ namespace DevstreamTestTask.Reflection
     {
         public static IEnumerable<T> GetInstances<T>()
         {
+            //Needed parameterless constructor to initiate creation of every subclass instance
             IEnumerable<T> instances = typeof(T).Assembly.GetTypes().Where(t => t.IsSubclassOf(typeof(T)) 
             && !t.IsAbstract
             ).Select(t => (T)Activator.CreateInstance(t));
