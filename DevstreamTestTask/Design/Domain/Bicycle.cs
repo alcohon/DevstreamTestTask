@@ -14,18 +14,18 @@ namespace DevstreamTestTask.Design.Domain
     {
         public const int DEFAULT_MIN_SPEED = 20;
         public const int DEFAULT_MAX_SPEED = 150;
-
         private int speed;
 
         public Bicycle() : base()
         {
-
+            speed = DEFAULT_MIN_SPEED;
+            ActivityType = BicycleAcitvityType.Road;
         }
 
         public Bicycle(
-            string manufacturer = "Basic Bicycle Manufacturer Name", 
-            string vehicleName = "Basic Bicycle Name", 
-            decimal price = 10.10m, 
+            string manufacturer, 
+            string vehicleName, 
+            decimal price, 
             BicycleAcitvityType activityType = BicycleAcitvityType.Road, 
             int speed = 50): base(manufacturer, price, vehicleName)
         {

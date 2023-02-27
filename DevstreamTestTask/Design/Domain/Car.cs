@@ -15,12 +15,16 @@ namespace DevstreamTestTask.Design.Domain
         public const int DEFAULT_MIN_SPEED = 180;
         private int speed;
 
-        public Car() : base() { }
+        public Car() : base()
+        {
+            speed = DEFAULT_MIN_SPEED;
+            CarWheelDriveType = CarWheelDriveType.Rear;
+        }
 
         public Car(
-            string manufacturer = "Basic Car Manufacturer Name", 
-            string vehicleName = "Basic Car Name", 
-            decimal price = 10.10m, int speed = 220) : base(manufacturer, price, vehicleName)
+            string manufacturer, 
+            string vehicleName, 
+            decimal price, int speed = 220) : base(manufacturer, price, vehicleName)
         {
             Speed = speed;
         }

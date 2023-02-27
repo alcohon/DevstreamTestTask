@@ -30,7 +30,9 @@ namespace DevstreamTestTask.Design.Abstract
 
         protected Vehicle()
         {
-
+            manufacturer = "Basic Bicycle Manufacturer Name";
+            vehicleName = "Basic Bicycle Name";
+            price = 10.10m;
         }
 
         protected Vehicle(string manufacturer, decimal price, string vehicleName)

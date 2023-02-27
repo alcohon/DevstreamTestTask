@@ -14,12 +14,15 @@ namespace DevstreamTestTask.Design.Domain
         public const int DEFAULT_MAX_SPEED = 280;
         private int speed;
 
-        public Motorbike() : base() { }
+        public Motorbike() : base() 
+        { 
+
+        }
 
         public Motorbike(
-            string manufacturer = "Basic Motorbike Manufacturer Name",
-            string vehicleName = "Basic Motorbike Name",
-            decimal price = 10.10m, int speed = 200) : base(manufacturer, price, vehicleName)
+            string manufacturer,
+            string vehicleName,
+            decimal price, int speed = 200) : base(manufacturer, price, vehicleName)
         {
             Speed = speed;
         }
