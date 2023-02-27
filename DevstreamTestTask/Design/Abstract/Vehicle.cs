@@ -23,7 +23,7 @@ namespace DevstreamTestTask.Design.Abstract
             get => manufacturer;
             set
             {
-                ThrowStringPropertyError(value, Manufacturer);
+                ThrowStringPropertyError(value, nameof(Manufacturer));
                 manufacturer = value;
             }
         }
@@ -47,7 +47,7 @@ namespace DevstreamTestTask.Design.Abstract
             get => vehicleName;
             set
             {
-                ThrowStringPropertyError (value, VehicleName);
+                ThrowStringPropertyError (value, nameof(VehicleName));
                 vehicleName = value;
             }
         }
